@@ -13,6 +13,7 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
+    "docx": "^9.5.1",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "firebase": "^10.13.2",
@@ -25,7 +26,9 @@
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.9.15",
     "nodemon": "^3.1.7",
-    "quanlykhohang_be": "file:"
+    "pdfkit": "^0.17.1",
+    "quanlykhohang_be": "file:",
+    "xlsx": "^0.18.5"
   },
   "_moduleAliases": {
     "@": "src"
