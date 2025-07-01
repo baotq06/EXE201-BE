@@ -15,6 +15,7 @@ const exportSlipRouter = require("@/routes/exportSlip.route");
 const generalStatisticsRouter = require("@/routes/generalStatistics.route");
 const reportRouter = require("@/routes/report.route");
 const recordInventoryRouter = require("@/routes/recordInventory.route");
+const slipRouter = require("@/routes/slip.route");
 
 app.use(express.json());
 app.use(cors());
@@ -28,6 +29,7 @@ app.use("/api/exportSlip", exportSlipRouter);
 app.use("/api/generalStatistics", generalStatisticsRouter);
 app.use("/api/report", reportRouter);
 app.use("/api/recordInventory", recordInventoryRouter);
+app.use("/api/dowload", slipRouter);
 
 connectDB().then(() => {
   app.listen(PORT, () => {
