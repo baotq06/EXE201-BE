@@ -18,7 +18,14 @@ const recordInventoryRouter = require("@/routes/recordInventory.route");
 const slipRouter = require("@/routes/slip.route");
 
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "https://exe201-fe.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    credentials: true,
+  })
+);
 
 app.use("/api/user", userRouter);
 app.use("/api/product", productRouter);
